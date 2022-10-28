@@ -3,5 +3,6 @@ public class EjemploClaseMath {
         System.out.println("git push example ");
         System.out.println("probando el bash x2");
         System.out.println("probando el bash x3");
+        System.out.println("bash desde intellij");
     }
 }
