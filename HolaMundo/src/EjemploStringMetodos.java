@@ -1,7 +1,7 @@
 public class EjemploStringMetodos {
     public static void main(String[] args) {
         
-        String nombre = "Andres";
+        String nombre = "Andress";
 
         System.out.println("nombre.length() = " + nombre.length());
         System.out.println("nombre.toUpperCase() = " + nombre.toUpperCase());
