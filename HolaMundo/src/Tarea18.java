@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Tarea18 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Ingrese el tamaño de la matriz (n x n):");
+        System.out.println("Ingrese el tamaño de la matriz n x n:");
         int n = in.nextInt();
         if (n==0){
             System.out.println("ERROR");
