@@ -1,4 +1,4 @@
-public class EjemploAutomovil {
+public class EjemploAutomovilEnum {
     public static void main(String[] args) {
         Automovil subaru = new Automovil("Subaru", "Impreza");
 
