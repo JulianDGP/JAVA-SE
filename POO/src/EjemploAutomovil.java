@@ -2,10 +2,14 @@ public class EjemploAutomovil {
     public static void main(String[] args) {
         Automovil subaru = new Automovil("Subaru", "Impreza");
 
+        Motor motorSubaru = new Motor(2.0, TipoMotor.BENCINA);
+        Estanque estanqueSubaru = new Estanque(50);
+        subaru.setMotor(motorSubaru);
+        subaru.setEstanque(estanqueSubaru);
 
-        Automovil mazda = new Automovil("Mazda", "BT-50", Color.GRIS,3.5);
+        Automovil mazda = new Automovil("Mazda", "BT-50", Color.GRIS,motorSubaru);
 
-        Automovil nissan = new Automovil("Nissan","Navara", Color.GRIS, 3.5, 50);
+        Automovil nissan = new Automovil("Nissan","Navara", Color.GRIS, motorSubaru, estanqueSubaru);
 
 
         System.out.println(mazda.acelerarFrenar((400)));
