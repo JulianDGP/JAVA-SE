@@ -9,7 +9,7 @@ public class EjemploAutomovil {
 
         Automovil mazda = new Automovil("Mazda", "BT-50", Color.GRIS,motorSubaru);
 
-        Automovil nissan = new Automovil("Nissan","Navara", Color.GRIS, motorSubaru, estanqueSubaru);
+        Automovil nissan = new Automovil("Nissan","Navara", Color.GRIS, motorSubaru, new Estanque(50));
 
 
         System.out.println(mazda.acelerarFrenar((400)));
