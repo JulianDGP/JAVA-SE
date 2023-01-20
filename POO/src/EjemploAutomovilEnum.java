@@ -23,7 +23,7 @@ public class EjemploAutomovilEnum {
         tipo = mazda.getTipo();
 
         switch (tipo) {
-            case CONVERTIBLE -> System.out.println(" el auto es deportivo y descapotado de dos puertas");
+            case CONVERTIBLE ->{System.out.println(" el auto es deportivo y descapotado de dos puertas");}
 
             case COUPE -> System.out.println("es automovil pequeño de dos puertas y tipicamente deportivo");
 
