@@ -76,6 +76,9 @@ public class Automovil {
     }
 
     public Estanque getEstanque() {
+        if (estanque == null) {
+            this.estanque = new Estanque();
+        }
         return estanque;
     }
 
@@ -120,26 +123,33 @@ public class Automovil {
     }
 
     public float calcularConsumo(int km, float porcentajeBencima) {
-        return km / (estanque.getCapacidad() * porcentajeBencima);
+        return km / (this.getEstanque().getCapacidad() * porcentajeBencima);
     }
 
     public float calcularConsumo(int km, int porcentajeBencima) {
 
-        return km / (estanque.getCapacidad() * (porcentajeBencima / 100f));
+        return km / (this.getEstanque().getCapacidad() * (porcentajeBencima / 100f));
 
     }
 
 
     @Override
     public String toString() {
-        return "Automovil{" + "id="
+
+        String detalle = "Automovil{" + "id="
                 + this.id + ", fabricante='"
                 + this.getFabricante() + '\''
-                + ", modelo='" + this.getModelo() + '\''
-                + ", color=" + this.getColor() + ", cilindraje="
-                + this.motor.getCilindrada() + ", capacidadEstanque="
-                + this.estanque.getCapacidad() + ", tipo="
-                + this.getTipo().getDescripcion() + '}';
+                + ", modelo='" + this.getModelo();
+        if (this.getTipo() != null) {
+            detalle += ", tipo=" + this.getTipo().getDescripcion() + '}';
+        }
+        detalle += '\'' + ", color=" + this.getColor();
+
+        if (this.motor != null) {
+            detalle += ", cilindraje=" + this.motor.getCilindrada() + ", capacidadEstanque=";
+        }
+
+        return detalle;
     }
 
     public TipoAutomovil getTipo() {
