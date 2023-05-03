@@ -43,6 +43,12 @@ public class Automovil {
         this.estanque = estanque;
     }
 
+    public Automovil(String fabricante, String modelo, Color color, Motor motor, Estanque estanque, Persona conductor, Rueda[] ruedas) {
+        this(fabricante, modelo, color, motor, estanque);
+        this.conductor = conductor;
+        this.ruedas = ruedas;
+    }
+
     public String getFabricante() {
         return fabricante;
     }
@@ -102,11 +108,7 @@ public class Automovil {
         this.ruedas = ruedas;
     }
 
-    public Automovil(String fabricante, String modelo, Color color, Motor motor, Estanque estanque, Persona conductor, Rueda[] ruedas) {
-        this(fabricante, modelo, color, motor, estanque);
-        this.conductor = conductor;
-        this.ruedas = ruedas;
-    }
+
 
     public String acelerar(int rpm) {
         return "el auto" + fabricante + "acelerando a" + rpm + "rpm";
