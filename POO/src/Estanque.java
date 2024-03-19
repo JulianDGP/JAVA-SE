@@ -1,5 +1,5 @@
 public class Estanque {
-    private int capacidad;
+    private final int capacidad;
 
    public Estanque(){
        this.capacidad=40;

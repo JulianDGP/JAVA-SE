@@ -11,9 +11,8 @@ public class HallarPalabraEnFrase {
         iterarFrase : for(int i=0; i<tamañoFrase; ){
             int k=i;
 
-            iterarPalabra:
-            for(int j=0; j<tamañopalabra; j++){
-                if(frase.charAt(k++) != palabra.charAt(j)) {
+            for (int j = 0; j < tamañopalabra; j++) {
+                if (frase.charAt(k++) != palabra.charAt(j)) {
                     i++;
                     continue iterarFrase;
                 }

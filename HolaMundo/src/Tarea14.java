@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Tarea14 {
     public static void main(String[] args) {
-        int arreglo[] = new int[7];
+        int[] arreglo = new int[7];
         Scanner in = new Scanner(System.in);
         int posNumMayor=0;
         for (int i =0; i< arreglo.length;i++){

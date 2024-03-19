@@ -7,25 +7,25 @@ public class OperadoresLogico {
         double l = 2.1413e3;
         boolean m = false;
         
-        boolean b1 = i == j && k < l && m == false;
+        boolean b1 = i == j && k < l && !m;
         System.out.println("b1 = " + b1);
         
         boolean b2 = i == j || k < l;
         System.out.println("b2 = " + b2);
         
-        boolean b3 = i == j && (k < l || m == true);
+        boolean b3 = i == j && (k < l || m);
         System.out.println("b3 = " + b3);
         
-        boolean b4 = (i == j || k < l) && m == true;
+        boolean b4 = (i == j || k < l) && m;
         System.out.println("b4 = " + b4);
         
-        boolean b5 = (true || true) && false;
+        boolean b5 = false;
         System.out.println("b5 = " + b5);
         
-        boolean b6 = true || false && false || false; // true
+        boolean b6 = true; // true
         System.out.println("b6 = " + b6);
 
-        boolean b7 = ((true || false) && false) || false; // false
+        boolean b7 = false; // false
         System.out.println("b7 = " + b7);
         
 

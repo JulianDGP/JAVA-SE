@@ -21,7 +21,7 @@ public class EjemploStringValidar {
         boolean esBlanco = curso.isBlank();
         System.out.println("esBlanco = " + esBlanco);
 
-        if(esBlanco == false) {
+        if(!esBlanco) {
             System.out.println(curso.toUpperCase());
             System.out.println("Bienvenido al curso ".concat(curso));
         }

@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class EjemploArregloNumMayor {
     public static void main(String[] args) {
-        int a[] = new int[5];
+        int[] a = new int[5];
         Scanner in = new Scanner(System.in);
 
         int posicionDelmayor=0;

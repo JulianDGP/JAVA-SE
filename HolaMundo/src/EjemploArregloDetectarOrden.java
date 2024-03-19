@@ -1,6 +1,6 @@
 public class EjemploArregloDetectarOrden {
     public static void main(String[] args) {
-        int a[] = new int[5];
+        int[] a = new int[5];
         boolean esAscendente=false;
         boolean esDescendente = false;
 
@@ -13,11 +13,11 @@ public class EjemploArregloDetectarOrden {
                 esDescendente = true;
             }
         }
-        if (esAscendente == true && esDescendente==false){
+        if (esAscendente && !esDescendente){
             System.out.println("Es ascendente");
-        }else if(esAscendente == false && esDescendente==true){
+        }else if(!esAscendente && esDescendente){
             System.out.println("Es Descendente");
-        } else if (esAscendente == true && esDescendente==true) {
+        } else if (esAscendente && esDescendente) {
             System.out.println("Esta desordenado");
         }else {
             System.out.println("Son iguales");

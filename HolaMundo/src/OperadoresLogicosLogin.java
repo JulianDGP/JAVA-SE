@@ -27,7 +27,7 @@ public class OperadoresLogicosLogin {
         boolean esAutenticado = false;
 
         for(int i = 0; i < usernames.length; i++){
-            esAutenticado = (usernames[i].equals(u) && passwords[i].equals(p))? true: esAutenticado;
+            esAutenticado = usernames[i].equals(u) && passwords[i].equals(p) || esAutenticado;
 
             /*if( (usernames[i].equals(u) && passwords[i].equals(p)) ){
                 esAutenticado = true;

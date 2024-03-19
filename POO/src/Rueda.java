@@ -1,7 +1,7 @@
 public class Rueda {
-    private String fabricante;
-    private int aro;
-    private  double ancho;
+    private final String fabricante;
+    private final int aro;
+    private final double ancho;
 
     public Rueda(String fabricante, int aro, double ancho) {
         this.fabricante = fabricante;

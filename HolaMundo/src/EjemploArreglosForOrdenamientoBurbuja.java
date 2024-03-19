@@ -26,7 +26,7 @@ public class EjemploArreglosForOrdenamientoBurbuja {
 
         sortBurbuja(arreglo);
 
-        Integer numeros[] = new Integer[4];
+        Integer[] numeros = new Integer[4];
         numeros[0] = 10;
         numeros[1]= 7;
         numeros[2]=35;

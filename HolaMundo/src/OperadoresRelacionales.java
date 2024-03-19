@@ -16,10 +16,10 @@ public class OperadoresRelacionales {
         boolean b3 = i != j; // <>
         System.out.println("b3 = " + b3);
         
-        boolean b4 = m == true;
+        boolean b4 = m;
         System.out.println("b4 = " + b4);
 
-        boolean b5 = m != true;
+        boolean b5 = !m;
         System.out.println("b5 = " + b5);
         
         boolean b6 = i > j;

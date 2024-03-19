@@ -1,5 +1,5 @@
 public class EjemploArreglosOrdenPrincipioFinal {
-    public static void main(String args[])
+    public static void main(String[] args)
     {
         int[] numeros = new int[10];
         int []a = new int [10];

@@ -20,7 +20,7 @@ public class EjemploStringTestRendimientoConcat {
         long fin = System.currentTimeMillis();
         System.out.println(fin - inicio);
         System.out.println("c = " + c);
-        System.out.println("sb = " + sb.toString());
+        System.out.println("sb = " + sb);
         System.exit(0);
     }
 }
